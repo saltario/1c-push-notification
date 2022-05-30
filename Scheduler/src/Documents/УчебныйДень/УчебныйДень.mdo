@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a788347b-cf34-4244-8049-41bf0f09db1f">
+  <producedTypes>
+    <objectType typeId="5f4602ba-c4ee-47e9-bea8-51cc5f57064a" valueTypeId="c26e0548-c9f3-4a70-b226-4eaeaad94d30"/>
+    <refType typeId="6f2f2ddd-8461-4033-b708-4f669b986f54" valueTypeId="b0f7d3a4-2fae-43a1-82e2-e82d5d7423cb"/>
+    <selectionType typeId="68851bf1-bc91-441c-a34a-e14e07acef19" valueTypeId="c8e9728d-a17c-4761-afe1-9fc0c0610087"/>
+    <listType typeId="9726cf86-caf6-4b83-8732-2b239879a1dd" valueTypeId="80f38ef1-f361-493c-9281-42c7afd0ff17"/>
+    <managerType typeId="0e2b8d2e-8bb5-4f2a-87ff-31a71d3b8407" valueTypeId="27b77046-83c9-46ed-b969-294af6cc4cae"/>
+  </producedTypes>
+  <name>УчебныйДень</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учебный день</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Учебные дни</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>8</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultObjectForm>Document.УчебныйДень.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УчебныйДень.Form.ФормаСписка</defaultListForm>
+  <registerRecords>AccumulationRegister.ПрошедшиеЗанятия</registerRecords>
+  <registerRecords>InformationRegister.ДомашниеЗадания</registerRecords>
+  <registerRecords>InformationRegister.Оценки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="18a01bc7-ec52-416b-b003-5f95d9cc7aec">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e955c39b-c687-4c4b-b660-a36c9e4a0a9e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="0010f9e5-82b2-4ed0-b8db-af7b1fe0cc97">
+    <producedTypes>
+      <objectType typeId="4539fd5b-582b-4ca2-91df-f463963c2e5d" valueTypeId="6e229123-e503-4dc2-a974-b167e0a7b526"/>
+      <rowType typeId="2a710827-38b0-4ab2-bcec-074422bfb614" valueTypeId="be4d66d2-278a-41d6-a14c-83d0975e7713"/>
+    </producedTypes>
+    <name>Уроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уроки</value>
+    </synonym>
+    <attributes uuid="1cf6d3a0-6ba8-4235-a218-ec5d3a21c039">
+      <name>Предмет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предмет</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Предметы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c632bf8f-1e0b-43d6-8b63-96a2497c0995">
+      <name>ДомашнееЗадание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Домашнее задание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <multiLine>true</multiLine>
+      <extendedEdit>true</extendedEdit>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="718420d9-8a98-4fd9-8915-3323e1a8fe55">
+      <name>Выполнено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выполнено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b3ccf9dd-d1f4-4e8f-a993-7d8ee84a3a5f">
+      <name>Оценка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="79508922-8888-44c3-9eba-eeab08f29ae9">
+      <name>КомментарийУчителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий учителя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="eee051a0-13af-4ace-8692-a6fb05c073d2">
+    <name>ЗаполнитьРасписаниеНаСледующуюНеделю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнить расписание на следующую неделю</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.УчебныйДень</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

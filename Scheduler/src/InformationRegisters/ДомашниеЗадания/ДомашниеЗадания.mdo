@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a58556c9-62ad-44b3-b792-cbfe10fb172d">
+  <producedTypes>
+    <selectionType typeId="5b243bb7-c3a9-4be6-a53d-7466a57ce858" valueTypeId="665ea93c-5ba3-4817-8e22-54383a377a0a"/>
+    <listType typeId="76c8c8b9-6ee3-454f-8da4-5f7ffdcab4c4" valueTypeId="22f73c9f-397b-453c-a8cd-277eaf2b57b4"/>
+    <managerType typeId="5beda89a-bbd7-41a2-993a-feddb33b9e08" valueTypeId="58ab4eae-24e7-4ab7-bb3c-293498f1208c"/>
+    <recordSetType typeId="27b365cc-5f01-4b9d-844f-2c5f25958939" valueTypeId="b679a0db-0ba0-43d8-852d-8b69932f9f5b"/>
+    <recordKeyType typeId="8be87ad5-54ac-4c04-b2ee-8275831202d3" valueTypeId="17668f9c-2a70-4183-82b2-14b0dbd4802c"/>
+    <recordType typeId="87af0b9e-3043-43df-a8b3-32bd2d3d446f" valueTypeId="99606eb7-67a6-44af-9bbb-f62f146c0920"/>
+    <recordManagerType typeId="bdf780cb-142c-4107-9af9-c081191980a6" valueTypeId="fed31595-82db-48f6-885f-c5e1c9db975d"/>
+  </producedTypes>
+  <name>ДомашниеЗадания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Домашние задания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ДомашниеЗадания.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2dea9141-2452-448f-9a08-c333dc95f4b2">
+    <name>ДомашнееЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Домашнее задание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="9a58b59b-327e-4d11-86dc-736881a3f035">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fda01bb8-f27c-4aec-a27b-21c3c4fe0800">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Предметы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1df58268-12c7-46e3-8e1f-594ac20ae227">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

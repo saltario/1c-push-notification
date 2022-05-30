@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="281fd6a2-f2c2-469b-99c2-8991e26e63eb">
-  <name>Планировщик</name>
+  <name>Дневник</name>
   <synonym>
     <key>ru</key>
-    <value>Планировщик</value>
+    <value>Дневник</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="c82f6f44-1a47-45c5-9ab3-1da9f28f656b"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="9067944a-484e-418c-a134-9b69a2530f68"/>
@@ -16,13 +16,25 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <usedMobileApplicationFunctionalities/>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>PushNotifications</functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.20</compatibilityMode>
+  <compatibilityMode>8.3.8</compatibilityMode>
   <languages uuid="23f9023b-376f-417c-b67f-80ae80b54bde">
     <name>Русский</name>
     <synonym>
@@ -31,4 +43,29 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <commonModules>CommonModule.Серверный</commonModules>
+  <commonModules>CommonModule.МобильныйКлиентВызовСервера</commonModules>
+  <commonModules>CommonModule.МобильныйКлиентКлиентСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияКлиент</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияСервер</commonModules>
+  <commonModules>CommonModule.ОтправкаУведомлений</commonModules>
+  <commonModules>CommonModule.МобильныйКлиентКлиент</commonModules>
+  <functionalOptions>FunctionalOption.ИспользоватьPushУведомления</functionalOptions>
+  <constants>Constant.КлючДоступаСервисаPushУведомлений</constants>
+  <constants>Constant.ИспользоватьPushУведомления</constants>
+  <constants>Constant.ДатаПоследнейОтправкиPushУведомлений</constants>
+  <commonForms>CommonForm.Планировщик</commonForms>
+  <catalogs>Catalog.Кабинеты</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.Предметы</catalogs>
+  <catalogs>Catalog.Учителя</catalogs>
+  <documents>Document.УчебныйДень</documents>
+  <enums>Enum.Оценки</enums>
+  <reports>Report.Успеваемость</reports>
+  <reports>Report.ПрошедшиеЗанятия</reports>
+  <informationRegisters>InformationRegister.Оценки</informationRegisters>
+  <informationRegisters>InformationRegister.ДомашниеЗадания</informationRegisters>
+  <informationRegisters>InformationRegister.СообщенияPushУведомлений</informationRegisters>
+  <informationRegisters>InformationRegister.СведенияОМобильныхКлиентах</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПрошедшиеЗанятия</accumulationRegisters>
 </mdclass:Configuration>

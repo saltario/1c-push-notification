@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1b82198-63c2-432d-b358-ea0226851072">
+  <producedTypes>
+    <objectType typeId="5cf660fe-fda8-4df3-b3b9-70eb208e5a26" valueTypeId="f472a32a-4ed6-484b-bf9a-1e652c4a24fe"/>
+    <managerType typeId="01ef17b3-ce45-46a8-960f-299564f60d94" valueTypeId="97c6e960-ed05-491b-a1cd-75eeddb831c1"/>
+  </producedTypes>
+  <name>ПрошедшиеЗанятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прошедшие занятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПрошедшиеЗанятия.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="5a5aa1c5-a114-40da-913d-0dc2cd67142d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

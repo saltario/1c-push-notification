@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3dfc328a-e62a-44af-ae8e-d7efbb497b5a">
+  <producedTypes>
+    <selectionType typeId="5cb74633-414b-4697-8658-4803f37a8b1b" valueTypeId="29df0def-cb39-4fc5-9063-93a85fdca5c5"/>
+    <listType typeId="14cea245-2a68-4ba4-b94a-eee07ad04dce" valueTypeId="fa48e8e8-93b2-4f49-b312-b92cf1fdcc68"/>
+    <managerType typeId="0bd1293b-508b-4531-982b-98fe462afd10" valueTypeId="7c8c4ff2-010c-4e93-a736-e94956c6cd9c"/>
+    <recordSetType typeId="8c14c120-d19a-408b-8207-9be7a08991b8" valueTypeId="149e111d-3fe7-46aa-ad36-d4504e104c27"/>
+    <recordKeyType typeId="1bb40858-9996-4237-b0ed-b486af8c3fca" valueTypeId="65aa2a5f-dd55-43ab-b464-b93457d41904"/>
+    <recordType typeId="a5490574-03fa-4add-8a6e-7e06c2e88a16" valueTypeId="065317fe-0c9a-4e72-bafb-f2390c2ac656"/>
+  </producedTypes>
+  <name>ПрошедшиеЗанятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прошедшие занятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b3ecc308-03f3-4bdb-9ce0-792e27fed535">
+    <name>КоличествоУроков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество уроков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="08efb4ce-e92f-49b7-b986-4424dc6778d3">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Предметы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

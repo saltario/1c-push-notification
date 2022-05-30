@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa0a9bf7-38c0-4e34-8e22-64f2ea68ee0d">
+  <producedTypes>
+    <managerType typeId="069e220f-e66f-43fe-86f7-b748338c17eb" valueTypeId="407eab2f-2bb2-4c17-b452-b0a277403ebc"/>
+    <valueManagerType typeId="41b0f3a3-6617-43f2-b5fa-1b428385d9f2" valueTypeId="e2e32c27-1aad-494e-9795-cf53eff5259f"/>
+    <valueKeyType typeId="32a778be-d32c-409b-84c5-a6f9a228eec9" valueTypeId="107fb0cd-440c-44a9-bbf4-ec7ce748b347"/>
+  </producedTypes>
+  <name>ДатаПоследнейОтправкиPushУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата последней отправки push уведомлений</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
